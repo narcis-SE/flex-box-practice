@@ -7,45 +7,97 @@ body{
   }
 
 
+
   .logo p{
       text-decoration: none;
       color: white;
-      font-weight: bold;
       margin: 0 0 0 10px;
+      align-items: flex-end;
+      padding: 0 10px 0 0;
   }
 
-
-  nav{
-      width: 100%;
-      background-color: #55188b;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-  }
-
-
-  .nav-links{
-      list-style: none;
-      display: flex;
-  }
+nav{
+    width: 100%;
+    background-color: #55188b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+}
 
 
-  .nav-item a{
-      display: inline-block;
-      text-decoration: none;
-      color: white;
-  }
+.nav-links{
+    list-style: none;
+    display: flex;
+}
 
 
-  li{
+.nav-item a{
+    display: inline-block;
     text-decoration: none;
-    color: rgba(255,255,255,0.8);
-    padding: 20px;
-    font-weight: bold;
-    font-size: 18px;
-  }
+    color: white;
+}
 
-  ul{
-    list-style-type: none;
-    margin: 0;
+
+li{
+  text-decoration: none;
+  align-items: center;
+  color: rgba(255,255,255,0.8);
+  padding: 20px;
+  font-size: 18px;
+  margin: 0px;
+}
+
+ul{
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px
+}
+
+@media only screen and (max-width: 768px){
+    body{
+        font-family: "Lato";
+        color: white;
+        margin: 0px;
+      }
+      .logo p{
+          text-decoration: none;
+          color: white;
+          margin: 0 0 0 10px;
+      }
+    nav{
+        background-color: #55188b;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+
+    }
+  
+  
+    .nav-links{
+        list-style: none;
+        display: flex;
+    }
+  
+  
+    .nav-item a{
+        display: inline-block;
+        text-decoration: none;
+        color: white;
+    }
+  
+  
+    li{
+      text-decoration: none;
+      color: rgba(255,255,255,0.8);
+      padding: 20px;
+      font-size: 16px;
+    }
+  
+    ul{
+      list-style-type: none;
+      margin: 0;
+      padding: 0px; 
+      flex-direction: column;
+    }
 }
